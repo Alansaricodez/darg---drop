@@ -1,0 +1,85 @@
+body {
+    background: rgb(180, 222, 235);
+    display: grid;
+    place-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    background: rgb(20, 75, 213);
+    padding: 1.2rem;
+    width: 450px;
+    display: inline-block;
+    border-radius: 18px;
+    box-shadow: 0 0 38px 13px rgba(0, 0, 0, 0.3);
+}
+
+.dropper {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    padding: 1.8rem;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.active {
+    border: 2px solid rgb(124, 124, 124);
+    background: rgb(61, 111, 239);
+}
+
+.dropper .icon {
+    font-size: 45px;
+    color: rgb(254, 255, 255);
+}
+
+.dropper .text {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 400;
+    /* color: rgb(124, 124, 124); */
+    color: #fff;
+}
+
+.progress {
+    width: 0%;
+    height: 18px;
+    background: rgb(61, 111, 239);
+    display: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.dropper label {
+    padding: 0.5rem 1.6rem;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(61, 111, 239);
+}
+
+.uploader {
+    display: none;
+}
+
+.line {
+    width: 77px;
+    height: 2px;
+    background: rgb(61, 111, 239);
+}
+
+.or-container {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem;
+}
+
+.or {
+    margin: 0.2rem;
+    font-weight: 400;
+    color: #fff;
+}

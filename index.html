@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop</title>
+
+    <!-- links -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- css styles file -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="dropper">
+            <i class="fa-solid fa-upload icon"></i>
+            <div class="text">
+                اسحب الملف الى هنا
+            </div>
+            <div class="or-container">
+                <span class="line"></span>
+                <span class="or">أو</span>
+                <span class="line"></span>
+            </div>
+
+            <label for="uploader">استكشف الملفات</label>
+            <input type="file" id="uploader" class="uploader" multiple>
+        </div>
+        <div class="progress"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
